@@ -3,41 +3,50 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.0.0.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza Express</title>
   </head>
   <body>
     <div class="start-menu container">
-      <div class= "row">
-
-        <div class="col-sm-3">
-          <h2>Chicago Pizza</h2>
-            <img src="Img/chicagopizza.jpeg" height="120" width="200" border="0" alt="Chicago Pizza"
-            <p></p>
-          <button id="chicagoPizzaOption" class="btn-success btn">Select Options</button>
-        </div>
-
-        <div class="col-sm-3">
-          <h2>Neopolitan Pizza</h2>
-            <img src="Img/neopolitan.jpg" height="120" width="200" border="0" alt="Neopolitan Pizza"
-            <p></p>
-          <button id="neopolitanPizzaOption" class="btn-success btn">Select Options</button>
-        </div>
-
-        <div class= "row">
-          <div class="col-lg-6">
-            <h2>Vegan</h2>
-              <img src="Img/vegan.jpg" height="120" width="200" border="0" alt="Neopolitan Pizza"
-              <p></p>
-            <button id="veganPizzaOption" class="btn-success btn">Select Options</button>
-          </div>
-        </div>
-      </div>
+      <h2>Create your own pizza</h2>
+      <img src="Img/yourown.jpg" height="120" width="200" border="0"
     </div>
     <p></p>
-    <div class="chicago-pizza container">
-      <h2>Chicago Pizza</h2>
+
+    <div class="place-order container">
+      <h2>Create your own</h2>
+      <p>Create your own pizza by selecting all of the toppings of your choice.</p>
+<!--Pizza Size Options  -->
+      <form id="yourOptions">
+        <p>Select your size:</p>
+        <select class="form-control" id=pizzaSize>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+<!--Topping Options  -->
+          <p></p>
+        <p>Select your toppings:</p>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Cheese</label><br>
+          <label><input type="checkbox" value="">Pepperoni</label><br>
+          <label><input type="checkbox" value="">Artichoke</label><br>
+          <label><input type="checkbox" value="">Anchovy</label><br>
+          <label><input type="checkbox" value="">Pepper</label><br>
+          <label><input type="checkbox" value="">Chicken</label><br>
+          <label><input type="checkbox" value="">Mushroom</label><br>
+          <label><input type="checkbox" value="">Black Olives</label><br>
+          <label><input type="checkbox" value="">Ham</label><br>
+          <label><input type="checkbox" value="">Ground Beef</label><br>
+          <label><input type="checkbox" value="">Italian Sausage</label><br>
+          <label><input type="checkbox" value="">Pinapple</label><br>
+        </div>
+
+        <p></p>
+
+        <h3>Total:</h3>
+        <button id="place-order" type="Submit" class="btn-danger btn">Place Order!</button>
 
 
     </div>
