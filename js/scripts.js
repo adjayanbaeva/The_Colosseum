@@ -4,6 +4,9 @@ $(document).ready(function(){
     event.preventDefault();
 
     var pizzaSize = $("select#pizzaSize").val();
+    var newOrder = new pizza(pizzaSize);
+
+
   })
 })
 
@@ -12,6 +15,7 @@ function pizza(size, toppings){
   this.size=size;
   this.toppings=toppings;
   this.quantityOfToppings
+  this.price;
 }
 
 // Prototype
@@ -24,5 +28,3 @@ pizza.prototype.price=function(){
   } else {
     price+=0
   }
-
-  
