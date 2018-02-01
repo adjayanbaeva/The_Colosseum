@@ -1,9 +1,38 @@
 h2 {
-  text-align: left;
+  text-align: center;
   font-style: italic;
   font-family: fantasy;
+  font-weight: bold;
+  color: brown;
+}
+
+#introduction {
+  text-align: center;
 }
 
 p {
     font-style: italic;
+}
+
+.yourOptions {
+  font-weight: bolder;
+}
+
+#pricePizza {
+  font-weight: bold;
+}
+
+html {
+  background-image: url("../img/pizza.jpg");
+  background-size: cover;
+}
+
+body {
+  margin: 100px;
+  border: 20px black;
+  box-shadow: 30px 0px 25px black;
+  display:inline-table;
+  padding: 40px;
+  padding-left: 2cm;
+  background-color: #DEB887;
 }
