@@ -29,24 +29,27 @@
           <p></p>
         <p>Select your toppings:</p>
         <div class="checkbox">
-          <label><input type="checkbox" value="Cheese">Cheese</label><br>
-          <label><input type="checkbox" value="">Pepperoni</label><br>
-          <label><input type="checkbox" value="">Artichoke</label><br>
-          <label><input type="checkbox" value="">Anchovy</label><br>
-          <label><input type="checkbox" value="">Pepper</label><br>
-          <label><input type="checkbox" value="">Chicken</label><br>
-          <label><input type="checkbox" value="">Mushroom</label><br>
-          <label><input type="checkbox" value="">Black Olives</label><br>
-          <label><input type="checkbox" value="">Ham</label><br>
-          <label><input type="checkbox" value="">Ground Beef</label><br>
-          <label><input type="checkbox" value="">Italian Sausage</label><br>
-          <label><input type="checkbox" value="">Pinapple</label><br>
+          <label><input type="checkbox" name="toppings" value="Cheese">Cheese</label><br>
+          <label><input type="checkbox" name="toppings" value="Pepperoni">Pepperoni</label><br>
+          <label><input type="checkbox" name="toppings" value="Artichoke">Artichoke</label><br>
+          <label><input type="checkbox" name="toppings" value="Anchovy">Anchovy</label><br>
+          <label><input type="checkbox" name="toppings" value="Pepper">Pepper</label><br>
+          <label><input type="checkbox" name="toppings" value="Chicken">Chicken</label><br>
+          <label><input type="checkbox" name="toppings" value="Mushroom">Mushroom</label><br>
+          <label><input type="checkbox" name="toppings" value="Olives<">Black Olives</label><br>
+          <label><input type="checkbox" name="toppings" value="Ham<">Ham</label><br>
+          <label><input type="checkbox" name="toppings" value="Beef">Ground Beef</label><br>
+          <label><input type="checkbox" name="toppings" value="Sausage">Italian Sausage</label><br>
+          <label><input type="checkbox" name="toppings" value="Pinapple">Pinapple</label><br>
         </div>
 
         <p></p>
 
-        <h3>Total:</h3>
+
         <button id="place-order" type="Submit" class="btn-danger btn">Place Order!</button>
+      </form>
+        <h3 id="result">Total:</h3>
+        <p id="pricePizza">Price: <span class="totalPrice"></span></p>
 
 
     </div>
