@@ -39,9 +39,7 @@ $(document).ready(function(){
 
     $("input:checkbox[name=toppings]:checked").each(function(){
       newOrder.quantityOfToppings.push($(this).val());
-      // var selectedToppings = $(this).val();
-      //  newOrder.toppings.push(selectedToppings)
-      //  console.log(selectedToppings)
+      
 
     });
 $(".totalPrice").text(newOrder.Calcprice());
